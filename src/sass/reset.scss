@@ -48,6 +48,11 @@ textarea {
   margin: 0;
   outline: none;
 }
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 html {
   box-sizing: border-box;

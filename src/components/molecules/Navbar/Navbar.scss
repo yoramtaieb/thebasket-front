@@ -1,4 +1,10 @@
+@import "../../../sass/mixins.scss";
+
 nav {
-  width: 15%;
-  height: 100vh;
+  display: none;
+  @include media(laptop) {
+    display: block;
+    width: 15%;
+    height: 100vh;
+  }
 }
