@@ -1,0 +1,12 @@
+.container-global {
+  display: flex;
+  align-items: center;
+  .container-img {
+    background-image: url("../../../img/air-max.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 85%;
+  }
+}

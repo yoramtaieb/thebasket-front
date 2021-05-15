@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import Routes from "./components/Routes";
+
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./components/darkmode/globalStyles";
+import { lightTheme, darkTheme } from "./components/darkmode/Theme";
+import { useDarkMode } from "./components/darkmode/useDarkMode";
+
+import "./App.scss";
 
 function App() {
+  const [theme] = useDarkMode();
+  const themeMode = theme === "light" ? lightTheme : darkTheme;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ThemeProvider theme={themeMode}>
+        <>
+          <GlobalStyles />
+          <Routes />
+        </>
+      </ThemeProvider>
+    </Router>
   );
 }
 
