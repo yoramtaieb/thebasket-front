@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import Navbar from "../../molecules/Navbar/Navbar";
 
@@ -12,7 +13,7 @@ function Signin() {
     <>
       <div className="container-global">
         <Navbar />
-        <div className="container-img">
+        <div class="content-signin">
           <form action="#">
             <h2>Sign into your account</h2>
             <div className="inputs">
@@ -49,7 +50,10 @@ function Signin() {
           </form>
           <div className="signup">
             <p>
-              You do not have an account ? <span>Sign Up</span>
+              You do not have an account ?{" "}
+              <NavLink exact to="/signup">
+                <span>Sign Up</span>
+              </NavLink>
             </p>
           </div>
         </div>

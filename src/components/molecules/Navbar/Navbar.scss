@@ -1,10 +1,80 @@
 @import "../../../sass/mixins.scss";
+@import "../../../sass/fonts.scss";
+@import "../../../sass/variables.scss";
 
 nav {
   display: none;
   @include media(laptop) {
     display: block;
-    width: 15%;
+    width: 18%;
     height: 100vh;
+    overflow: hidden;
+  }
+  .github-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 12vh;
+    padding: 0 20px;
+  }
+  .container-logo-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 78vh;
+    .logo-sneakers {
+      margin: 30px 0;
+      &:hover {
+        transform: scale(1.1);
+        transition-duration: 0.2s;
+      }
+    }
+    .links {
+      width: 100%;
+      font-family: "Poppins-Bold";
+      font-size: 1.1rem;
+      .link {
+        display: flex;
+        align-items: center;
+        padding: 12px 40px;
+        margin-bottom: 10px;
+        @include media(minilaptop) {
+          padding: 10px 30px;
+        }
+        h2 {
+          padding-left: 20px;
+        }
+      }
+      .active-home {
+        path {
+          fill: green;
+        }
+      }
+      .active-categories {
+        path {
+          fill: blue;
+        }
+      }
+      .active-wishlist {
+        path {
+          fill: red;
+        }
+      }
+    }
+  }
+  .auth {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    h2 {
+      cursor: pointer;
+      font-family: "Poppins-Bold";
+      display: flex;
+      justify-content: center;
+    }
+    .active {
+      color: red;
+    }
   }
 }

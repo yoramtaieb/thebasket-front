@@ -4,7 +4,7 @@
 .container-global {
   display: flex;
   height: 100vh;
-  .content-signin {
+  .content-signup {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -21,12 +21,11 @@
       right: 0;
       z-index: -1;
       display: block;
-      background-image: url("../../../assets/img/bg-signin.svg");
+      background-image: url("../../../assets/img/bg-signup.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       height: 100vh;
-      width: 100%;
     }
     form {
       display: flex;
@@ -55,7 +54,7 @@
           margin-bottom: 12px;
           font-size: 0.9rem;
         }
-        .password {
+        .marge-more {
           margin-top: 12px;
         }
         input {
@@ -87,37 +86,9 @@
             }
           }
         }
-        .socialnetwork {
-          display: flex;
-          button {
-            font-family: "poppins-bold";
-            width: 128.5px;
-            height: 33px;
-            margin: 5px;
-            color: $beige;
-            border: none;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 10px;
-            &:nth-child(1) {
-              background: #3b5998;
-              &:hover {
-                background: #203a70;
-              }
-            }
-            &:nth-child(2) {
-              background: #dc4e41;
-              &:hover {
-                background: #a84138;
-              }
-            }
-          }
-        }
       }
     }
-    .signup {
+    .signin {
       padding-top: 10px;
       p {
         font-family: "poppins-medium";
