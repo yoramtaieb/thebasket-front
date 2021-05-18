@@ -49,6 +49,7 @@
       .inputs {
         display: flex;
         flex-direction: column;
+        width: 100%;
         label {
           font-family: "poppins-medium";
           margin-bottom: 12px;
@@ -59,8 +60,7 @@
         }
         input {
           font-family: "poppins-regular";
-          width: 265px;
-          height: 33px;
+          padding: 7px 0;
           border-radius: 5px;
           padding-left: 10px;
           font-size: 0.8rem;
