@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import Layout from "./Layout/Layout";
+import Layout from "./template/Layout";
 import Signin from "./atoms/Signin/Signin";
 import Signup from "./atoms/Signup/Signup";
 import Wishlist from "./atoms/Wishlist/Wishlist";

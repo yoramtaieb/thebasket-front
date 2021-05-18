@@ -1,10 +1,16 @@
 import React from "react";
 import Navbar from "../molecules/Navbar/Navbar";
+import Home from "../pages/Home/Home";
+
+import "./Layout.scss";
 
 function Layout() {
   return (
     <>
-      <Navbar />
+      <div className="layout">
+        <Navbar />
+        <Home />
+      </div>
     </>
   );
 }
