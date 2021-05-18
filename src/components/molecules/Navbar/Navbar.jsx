@@ -47,20 +47,20 @@ function Navbar() {
               exact
               to="/"
               className="link"
-              activeClassName="active-home"
+              activeclassname="active-home"
             >
-              <Home className="path-black" activeClassName="active-home" />
+              <Home className="path-black" activeclassname="active-home" />
               <h2>Home</h2>
             </NavLink>
             <NavLink
               exact
               to="/categories"
               className="link"
-              activeClassName="active-categories"
+              activeclassname="active-categories"
             >
               <Categories
                 className="path-black"
-                activeClassName="active-categories"
+                activeclassname="active-categories"
               />
               <h2>Categories</h2>
             </NavLink>
@@ -68,18 +68,18 @@ function Navbar() {
               exact
               to="/wishlist"
               className="link"
-              activeClassName="active-wishlist"
+              activeclassname="active-wishlist"
             >
-              <Heart className="path-black" activeClassName="active-wishlist" />
+              <Heart className="path-black" activeclassname="active-wishlist" />
               <h2>Wishlist</h2>
             </NavLink>
           </div>
         </div>
         <div className="auth">
-          <NavLink exact to="/signin" className="test" activeClassName="active">
+          <NavLink exact to="/signin" className="test" activeclassname="active">
             <h2 className="signin">Sign In</h2>
           </NavLink>
-          <NavLink exact to="/signup" activeClassName="active">
+          <NavLink exact to="/signup" activeclassname="active">
             <h2 className="signup">Sign Up</h2>
           </NavLink>
         </div>

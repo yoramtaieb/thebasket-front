@@ -1,0 +1,23 @@
+@import "../../../sass/mixins.scss";
+
+.slider {
+  margin: 20px 20px;
+  @include media(laptop) {
+    margin: 20px 50px;
+  }
+  .each-slide {
+    .img {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 200px;
+      border-radius: 10px;
+      @include media(tablet) {
+        height: 300px;
+      }
+      @include media(laptop) {
+        height: 400px;
+      }
+    }
+  }
+}

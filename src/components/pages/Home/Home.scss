@@ -1,6 +1,10 @@
+@import "../../../sass/mixins.scss";
+
 .home {
-  height: 100vh;
-  width: 82%;
-  overflow: hidden;
-  overflow-y: scroll;
+  width: 100%;
+  @include media(laptop) {
+    width: 82%;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
 }

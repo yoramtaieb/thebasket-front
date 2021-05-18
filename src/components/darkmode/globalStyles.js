@@ -39,4 +39,7 @@ export const GlobalStyles = createGlobalStyle`
     .content-signup::before {
         filter: ${({ theme }) => theme.filter};
     }
+    .each-slide .img {
+        filter: ${({ theme }) => theme.filter};
+    }
 `;
